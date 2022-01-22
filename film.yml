@@ -47,7 +47,15 @@ collections:
     collection_mode: hide
     collection_order: release
     sync_mode: sync
-    summary: "La Nouvelle Vague" 
+    summary: "La Nouvelle Vague"
+  Italian Neorealism:
+    trakt_list: https://trakt.tv/users/orchesper/lists/french-new-wave
+    name: "Italian Neorealism"
+    sort_title: 05 - Italian Neorealism
+    collection_mode: hide
+    collection_order: release
+    sync_mode: sync
+    summary: "A national film movement characterized by stories set amongst the poor and the working class, filmed on location, and frequently using non-professional actors." 
 #
 # # # # # # # # # # # # # # # # # # # # # 
 # >> Desert Island Top 10s
