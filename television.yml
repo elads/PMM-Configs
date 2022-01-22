@@ -1,0 +1,40 @@
+templates:
+  Actor:
+    actor: tmdb
+    tmdb_person: <<person>>
+    tmdb_actor_details: <<person>>
+    sort_title: +_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+collections:
+#
+# # # # # # # # # # # # # # # # # # # # # 
+# >> Personal Trakt Lists  
+  Fabulous and Delicious:
+    trakt_list: https://trakt.tv/users/orchesper/lists/fabulous-and-delicious
+    name: Fabulous & Delicious
+    sort_title: 0 - Fabulous & Delicious
+    collection_mode: hide
+    collection_order: release
+    sync_mode: sync
+    summary: A collection of films which will linger in your heart for some time. Each a reminder that the world is a place of beauty and life must be honored by living it fully.
+  Impeccable Sci-Fi:
+    trakt_list: https://trakt.tv/users/orchesper/lists/impeccable-sci-fi
+    name: "Impeccable Sci-Fi"
+    sort_title: 00 - Sci-Fi 1b
+    collection_mode: hide
+    collection_order: alpha
+    sync_mode: sync
+    summary: "These will never disappoint" 
+#
+# # # # # # # # # # # # # # # # # # # # # 
+# >> Plex Filter Lists
+  To Boldly Go:
+    plex_all: true
+    filters:
+      title.begins: Star Trek
+    sort_title: 30 - To Boldly Go
+    collection_mode: hide
+    collection_order: release
+    summary: ...where no one has gone before

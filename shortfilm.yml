@@ -1,0 +1,18 @@
+templates:
+  Actor:
+    actor: tmdb
+    tmdb_person: <<person>>
+    tmdb_actor_details: <<person>>
+    sort_title: +_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+collections:
+  Pixar Shorts:
+    trakt_list: https://trakt.tv/users/thefork/lists/pixar-short-films
+    #name:
+    #sort_title: 
+    collection_mode: hide
+    collection_order: release
+    sync_mode: sync
+    summary: An incomplete selection

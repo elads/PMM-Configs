@@ -1,0 +1,380 @@
+templates:
+  Actor:
+    actor: tmdb
+    tmdb_person: <<person>>
+    tmdb_actor_details: <<person>>
+    sort_title: +_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+metadata:
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#
+  "Star Wars: Episode IV - A New Hope":
+    title: Star Wars (30mm)
+    sort_title: Star Wars Ep 4a
+    original_title: "Star Wars"
+    alt_title: "Star Wars: Episode IV - A New Hope"
+    #tmdb_movie: 11
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+collections:
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#
+# >> Personal Trakt Lists  
+  Fabulous and Delicious:
+    trakt_list: https://trakt.tv/users/orchesper/lists/fabulous-and-delicious
+    name: Fabulous & Delicious
+    sort_title: 0 - Fabulous & Delicious
+    collection_mode: hide
+    collection_order: release
+    sync_mode: sync
+    summary: A collection of films which will linger in your heart for some time. Each a reminder that the world is a place of beauty and life must be honored by living it fully.
+  Impeccable Sci-Fi:
+    trakt_list: https://trakt.tv/users/orchesper/lists/impeccable-sci-fi
+    name: "Impeccable Sci-Fi"
+    sort_title: 00 - Sci-Fi 1
+    collection_mode: hide
+    collection_order: alpha
+    sync_mode: sync
+    summary: "These will never disappoint" 
+  French New Wave:
+    trakt_list: https://trakt.tv/users/orchesper/lists/french-new-wave
+    name: "French New Wave"
+    sort_title: 05 - French New Wave
+    collection_mode: hide
+    collection_order: release
+    sync_mode: sync
+    summary: "La Nouvelle Vague" 
+#
+# # # # # # # # # # # # # # # # # # # # # 
+# >> Desert Island Top 10s
+  Desert Isle Alex P:
+    trakt_list: https://trakt.tv/users/orchesper/lists/desert-isle-alex-p
+    name: "Desert Isle - Alex P"
+    sort_title: 60 - DI Alex Pc
+    collection_mode: hide
+    collection_order: release
+    sync_mode: sync
+    summary: Desert Island Top 10
+#
+# # # # # # # # # # # # # # # # # # # # # 
+# >> Plex Filter Lists
+  To Boldly Go:
+    plex_all: true
+    filters:
+      title.begins: Star Trek
+    sort_title: 30 - To Boldly Go
+    collection_mode: hide
+    collection_order: release
+    summary: ...where no one has gone before
+#
+# # # # # # # # # # # # # # # # # # # # # 
+# >> Smart Collections
+  Documentaries:
+    smart_filter:
+      all:
+        genre: Documentary
+      sort_by: title.asc
+    sort_title: 07 - Documentaries
+    collection_mode: hide
+  Korean Cinema:
+    smart_filter:
+      any:
+        country: Republic of Korea
+      sort_by: title.asc
+    sort_title: 05 - Korean Cinema
+    collection_mode: hide
+    summary: Korea does not f*ck around when it comes to making great films.
+  4K Cinema:
+    smart_filter:
+      any:
+        country: Republic of Korea
+      sort_by: title.asc
+    sort_title: 99 - 4K Cinema
+    collection_mode: hide
+    summary: So. Many. Pixels.   
+#
+# # # # # # # # # # # # # # # # # # # # # 
+# >> Smart Collections - Auteurs
+  Agnès Varda:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 6817
+    sort_title: 10 - Agnès Vard
+    collection_mode: hide
+    summary: Agnès Varda (30 May 1928 – 29 March 2019) was a Belgian-born French film director and professor at the European Graduate School. Her films, photographs, and art installations focus on documentary realism, feminist issues, and social commentary — with a distinct experimental style.
+  Akira Kurosawa:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 5026
+    sort_title: 10 - Akira Kurosawa
+    collection_mode: hide
+    summary: "Akira Kurosawa (Kyūjitai: 黒澤 明, Shinjitai: 黒沢 明 Kurosawa Akira; March 23, 1910 – September 6, 1998) was a Japanese film director, producer, screenwriter and editor. Regarded as one of the most important and influential filmmakers in the history of cinema, Kurosawa directed 30 films in a career spanning 57 years."
+  Alfred Hitchcock:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 2636
+    sort_title: 10 - Alfred Hitchcock
+    collection_mode: hide
+    summary: Sir Alfred Joseph Hitchcock, KBE, was an English director and producer. After a successful career in his native country, Hitchcock moved to Hollywood. Over a career spanning more than half a century, Hitchcock fashioned for himself a distinctive and recognizable directorial style. He pioneered the use of a camera made to move in a way that mimics a person's gaze, forcing viewers to engage in a form of voyeurism. He framed shots to maximize anxiety, fear, or empathy, and used innovative film editing. Through his cameo appearances in his own films, interviews, film trailers, and the television program Alfred Hitchcock Presents, he became a cultural icon.
+  Andrei Tarkovsky:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 8452
+    sort_title: 10 - Andrei Tarkovsky
+    collection_mode: hide
+    summary: Andrei Tarkovsky was a Soviet filmmaker, writer, film editor, film theorist and opera director, widely regarded as one of the finest filmmakers of the 20th century. Tarkovsky's films include Andrei Rublev, Solaris, Mirror and Stalker. They are characterized by spirituality and metaphysical themes, long takes, lack of conventional dramatic structure and plot, and distinctively authored use of cinematography.
+  Baz Luhrmann:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 6201
+    sort_title: 10 - Baz Luhrman
+    collection_mode: hide
+    summary: Mark Anthony "Baz" Luhrmann (born 17 September 1962) is an Australian film director, screenwriter, and producer best known for The Red Curtain Trilogy, which includes his films Strictly Ballroom, William Shakespeare's Romeo + Juliet and Moulin Rouge!. In 2008, he released his film Australia, starring Hugh Jackman and Nicole Kidman.
+  Bong Joon-ho:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 21684
+    sort_title: 10 - Bong Joon-ho
+    collection_mode: hide
+    summary: "Bong Joon-ho (Korean: 봉준호), born September 14, 1969, is a South Korean film director, producer and screenwriter. His films are characterised by emphasis on social themes, genre-mixing, black humor, and sudden tone shifts. All of Bong's films have been South Korean productions, although both Snowpiercer and Okja (2017) are mostly in the English language. Two of his films have screened in competition at the Cannes Film Festival—Okja in 2017 and Parasite in 2019; the latter earned the Palme d'Or, which was a first for a South Korean film."
+  Christopher Guest:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 13524
+    sort_title: 10 - Christopher Guest
+    collection_mode: hide
+    summary: The Rt. Hon. Christopher Haden-Guest, 5th Baron Haden-Guest (born February 5, 1948), better known as Christopher Guest, is an American screenwriter, composer, musician, director, actor and comedian. He is most widely known in Hollywood for having written, directed and starred in several improvisational "mockumentary" films that feature a repertory-like ensemble cast, such as This is Spinal Tap. In the United Kingdom, he holds a Baronial peerage, and has publicly expressed a desire to see the House of Lords reformed as a democratically-elected chamber. Despite initial activity in the Lords, his career there was cut short by the House of Lords Act 1999. When using his title, he is normally styled for short as Lord Haden-Guest.
+  Francis Ford Coppola:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 1776
+    sort_title: 10 - Francis Ford Coppola
+    collection_mode: hide
+    summary: Francis Ford Coppola  (born April 7, 1939) is an American film director, producer and screenwriter. He epitomized the group of filmmakers known as the New Hollywood, which included George Lucas, Martin Scorsese, Robert Altman, Woody Allen and William Friedkin, who emerged in the early 1970s with unconventional ideas that challenged contemporary filmmaking.
+  François Truffaut:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 1650
+    sort_title: 10 - François Truffaut
+    collection_mode: hide
+    summary: François Roland Truffaut (6 February 1932 – 21 October 1984) was an influential film critic and filmmaker and one of the founders of the French New Wave. In a film career lasting over a quarter of a century, he remains an icon of the French film industry. He was also a screenwriter, producer, and actor working on over twenty-five films. Along with Jean-Luc Godard, Truffaut was one of the most influential figures of the French New Wave, inspiring directors such as Steven Spielberg, Quentin Tarantino, Brian De Palma, Martin Scorsese, & Wes Anderson.
+  George Lucas: 
+    smart_filter:
+      any:
+        #actor: tmdb
+        director: tmdb
+        #producer: tmdb
+        writer: tmdb
+      sort_by: release.asc
+    tmdb_person: 1
+    sort_title: 10 - George Lucas
+    collection_mode: hide
+    summary: George Walton Lucas Jr. (born May 14, 1944) is an American filmmaker and entrepreneur. Lucas is known for creating the Star Wars and Indiana Jones franchises and founding Lucasfilm, LucasArts and Industrial Light & Magic. He served as chairman of Lucasfilm before selling it to The Walt Disney Company in 2012. Lucas is one of history's most financially successful filmmakers and has been nominated for four Academy Awards. His films are among the 100 highest-grossing movies at the North American box office, adjusted for ticket-price inflation. Lucas is considered a significant figure of the 20th-century New Hollywood movement.
+  Hayao Miyazaki:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 608
+    sort_title: 10 - Hayao Miyazaki
+    collection_mode: hide
+    summary: Hayao Miyazaki (Miyazaki Hayao, born January 5, 1941) is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. 
+  Ingmar Bergman:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 6648
+    sort_title: 10 - Ingmar Bergman
+    collection_mode: hide
+    summary: Ernst Ingmar Bergman (14 July 1918 – 30 July 2007) was a Swedish director, writer and producer for film, stage and television. His influential body of work dealt with bleakness and despair as well as comedy and hope. Described by Woody Allen as "probably the greatest film artist, all things considered, since the invention of the motion picture camera", he is recognized as one of the most accomplished and influential film directors of all time. However, despite critical acclaim, his films rarely earned large grosses or gained wide audiences.
+  Jacques Demy:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 24882
+    sort_title: 10 - Jacques Demy
+    collection_mode: hide
+    summary: Jacques Demy was a French director and screenwriter. He appeared in the wake of the French New Wave alongside contemporaries like Jean-Luc Godard and François Truffaut. Demy's films are well known for their sumptuous look, drawing on Hollywood musicals, fairy tales, jazz, and opera. His films are also distinguishable by their overlapping continuity (i.e., characters cross over from film to film), lush musical scores (typically composed by Michel Legrand) and themes like teenage love, labor rights, incest, and the intersection between dreams and reality.
+  Jean-Luc Godard:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 3776
+    sort_title: 10 - Jean-Luc Godard
+    collection_mode: hide
+    summary: Jean-Luc Godard is a French-Swiss film director, screenwriter and film critic. He rose to prominence as a pioneer of the 1960s French New Wave film movement and was arguably the most influential French filmmaker of the post-war era.
+  Kathryn Bigelow:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 14392
+    sort_title: 10 - Kathryn Bigelow
+    collection_mode: hide
+    summary: Kathryn Ann Bigelow is an American film director. Her best-known films are the cult horror film Near Dark (1987), the surfer/bank robbery action picture Point Break (1991), the historical/mystery film The Weight of Water (2000) and the war drama The Hurt Locker (2008). The Hurt Locker won the 2010 Academy Award for Best Picture, won the BAFTA Award for Best Film, and was nominated for the 2010 Golden Globe Award for Best Drama. With The Hurt Locker, Bigelow became the first woman to win the Academy Award for Best Director, the Directors Guild of America Award for Outstanding Directing, the BAFTA Award for Best Direction, and the Critics' Choice Award for Best Director.
+  Martin Scorsese:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 1032
+    sort_title: 10 - Martin Scorsese
+    collection_mode: hide
+    summary: Martin Charles Scorsese (born November 17, 1942) is an American film director, producer, screenwriter, and actor. One of the major figures of the New Hollywood era, he is widely regarded as one of the greatest and most influential directors in film history. Scorsese's body of work explores themes such as Italian-American identity, Catholic concepts of guilt and redemption, faith, machismo, nihilism, crime and sectarianism. Many of his films are known for their depiction of violence and the liberal use of profanity.
+  Mel Brooks:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 14639
+    sort_title: 10 - Mel Brooks
+    collection_mode: hide
+    summary: Melvin Brooks (né Kaminsky, born June 28, 1926) is an American filmmaker, comedian, actor and composer. He is known as a creator of broad film farces and comic parodies. Brooks began his career as a comic and a writer for the early TV variety show Your Show of Shows. In middle age, Brooks became one of the most successful film directors of the 1970s, with many of his films being among the top 10 moneymakers of the year they were released. In 2001 he joined a small list of EGOT winners with his Tony award for The Producers.
+  Quentin Tarantino:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 138
+    sort_title: 10 - Quentin Tarantino
+    collection_mode: hide
+    summary: Quentin Jerome Tarantino (born March 27, 1963) is an American film director, screenwriter, producer, cinematographer and actor. In the early 1990s he was an independent filmmaker whose films used nonlinear storylines and aestheticization of violence. His films have earned him a variety of Academy Award, Golden Globe, BAFTA and Palme d'Or Awards and he has been nominated for Emmy and Grammy Awards. In 2007, Total Film named him the 12th-greatest director of all time.
+  Satyajit Ray:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 12160
+    sort_title: 10 - Satyajit Ray
+    collection_mode: hide
+    summary: Satyajit Ray (2 May 1921 – 23 April 1992) was an Indian filmmaker, widely regarded as one of the greatest filmmakers of the 20th century. Ray was born in the city of Calcutta into a Bengali family prominent in the world of arts and literature. Ray directed 36 films, including feature films, documentaries and shorts. He was also a fiction writer, publisher, illustrator, calligrapher, music composer, graphic designer and film critic.
+  Spike Lee:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 5281
+    sort_title: 10 - Spike Lee
+    collection_mode: hide
+    summary: Spike Lee was born Shelton Lee in 1957, in Atlanta, Georgia. At a very young age, he moved from pre-civil rights Georgia, to Brooklyn, New York. With pointed political messages, insightful, different and intelligent films, Spike Lee has become a well known political presence.
+  Stanley Kubrick:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 240
+    sort_title: 10 - Stanley Kubrick
+    collection_mode: hide
+    summary: Stanley Kubrick (July 26, 1928 – March 7, 1999) was an American film director, writer, producer, and photographer who lived in England during most of the last four decades of his career. Kubrick was noted for the scrupulous care with which he chose his subjects, his slow method of working, the variety of genres he worked in, his technical perfectionism, and his reclusiveness about his films and personal life. He maintained almost complete artistic control, making movies according to his own whims and time constraints, but with the rare advantage of big-studio financial support for all his endeavors.
+  Steven Spielberg:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 488
+    sort_title: 10 - Steven Spielberg
+    collection_mode: hide
+    summary: Steven Allan Spielberg KBE (born December 18, 1946) is an American film director, producer, and screenwriter. He is considered one of the founding pioneers of the New Hollywood era and one of the most popular directors and producers in film history. Spielberg is one of the American film industry's most critically successful filmmakers, with praise for his directing talent and versatility, and he has won the Academy Award for Best Director twice. Some of his films are also among the highest-grossing films, while his total work makes him the highest-grossing film director in history.
+  Tim Burton:
+    smart_filter:
+      any:
+        director: tmdb
+        writer: tmdb
+      sort_by: release.asc
+    tmdb_person: 510
+    sort_title: 10 - Tim Burton
+    collection_mode: hide
+    summary: Timothy Walter Burton (born August 25, 1958) is an American filmmaker, artist, writer, and animator. He is known for his dark, gothic, and eccentric horror and fantasy films. Burton has often worked with Johnny Depp and Danny Elfman, who has composed scores for all but three of the films Burton has directed. Helena Bonham Carter, Burton's former domestic partner, has appeared in many of his films
+  Wes Anderson:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 5655
+    sort_title: 10 - Wes Anderson
+    collection_mode: hide
+    summary: Wesley Wales Anderson (born May 1, 1969) is an American filmmaker. His films are known for their symmetry, eccentricity and distinctive visual and narrative styles, and he is cited by some critics as a modern-day example of the auteur. 
+  Wong Kar-wai:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.asc
+    tmdb_person: 12453
+    sort_title: 10 - Wong Kar-wai
+    collection_mode: hide
+    summary: Wong Kar-wai is a Hong Kong Second Wave filmmaker, internationally renowned as an auteur for his visually unique, highly stylized films. Wong's films frequently feature protagonists who yearn for romance in the midst of a knowingly brief life and scenes that can often be described as sketchy, digressive, exhilarating, and containing vivid imagery.
+#
+# # # # # # # # # # # # # # # # # # # # # 
+# >> 3rd party lists  
+  The Sci-Fi Agenda:
+    imdb_list: https://www.imdb.com/list/ls031925889/
+    sort_title: 00 - Sci-Fi 2
+    collection_mode: hide
+    collection_order: custom
+    sync_mode: sync
+    summary: The thinking person’s guide to science fiction cinema. An ongoing curated collection of notable science fiction films in recent times, sorted roughly in order of good × interesting. Courtesy of scifiagenda.com
+  Pixar Features:
+    imdb_list: https://www.imdb.com/list/ls076436404/
+    sort_title: 30 - Pixar Features
+    collection_mode: hide
+    collection_order: release
+    sync_mode: sync
+    summary: An incomplete selection
+  Studio Ghibli:
+    imdb_list: https://www.imdb.com/list/ls076439519/
+    sort_title: 30 - Studio Ghibli
+    collection_mode: hide
+    collection_order: release
+    sync_mode: sync
+    summary: The complete collection
+  Marvel Studios:
+    imdb_list: https://www.imdb.com/list/ls026690821/
+    sort_title: 30 - Marvel Studios
+    collection_mode: hide
+    collection_order: release
+    sync_mode: sync
+    summary: An incomplete selection
+
+#
+#  Best of the 1980s:
+#    tmdb_discover:
+#      primary_release_date.gte: 01/01/1980
+#      primary_release_date.lte: 12/31/1989
+#      with_original_language: en
+#      sort_by: popularity.desc
+#      limit: 100
+#    summary: A collection of the Top Content of the 1980s
+#  Name of the Collection:
+#      imdb_list: https://www.imdb.com/list/ls031925889/
+#      sort_title: string
+#      collection_mode: default hide hide_items show_items
+#      collection_order: custom release alpha 
+#      sync_mode: append sync
+#      summary: string 
+
+
